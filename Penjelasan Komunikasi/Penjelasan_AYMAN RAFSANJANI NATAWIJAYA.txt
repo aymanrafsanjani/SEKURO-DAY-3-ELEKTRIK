@@ -1,0 +1,17 @@
+Komunikasi serial adalah salah satu metode komunikasi data di mana hanya satu bit data yang dikirimkan melalui seuntai kabel pada suatu waktu tertentu. Pada dasarnya komunikasi serial adalah kasus khusus komunikasi paralel dengan nilai n = 1, atau dengan kata lain adalah suatu bentuk komunikasi paralel dengan jumlah kabel hanya satu dan hanya mengirimkan satu bit data secara simultan. Hal ini dapat disandingkan dengan komunikasi paralel yang sesungguhnya di mana n-bit data dikirimkan bersamaan, dengan nilai umumnya 8 ≤ n ≤ 128. Untuk komunikasi serial tersinkron, lebar pita setara dengan frekuensi jalur.
+
+Terdapat 4 komunikasi yang telah diajarkan yaitu 12C, SPI, UART, dan CAN.
+
+1. 12C
+Komunikasi 12C (Inter Integrated Circuit) merupakan standar komunikasi serial dua arah menggunakan dua saluran yang didesain khusus untuk mengirim maupun menerima data. Sistem I2C terdiri dari saluran SCL (Serial Clock) dan SDA (Serial Data) yang membawa informasi data antara I2C dengan pengontrolnya. Piranti yang dihubungkan dengan sistem I2C Bus dapat dioperasikan sebagai Master dan Slave. Master adalah piranti yang memulai transfer data pada I2C Bus dengan membentuk sinyal Start, mengakhiri transfer data dengan membentuk sinyal Stop, dan membangkitkan sinyal clock. Slave adalah piranti yang dialamati master.
+
+2. SPI
+SPI (Serial Peripheral Interface) merupakan komunikasi seri synchronous yang berarti harus menggunakan clock yang sama untuk mengsinkronisasi deteksi bit pada receiver. Biasanya hanya digunakan untuk komunikasi jarak pendek dengan mikrokontroler lain yang terletak pada papan rangkaian yang sama. Bus SPI dikembangkan untuk menyediakan komunikasi dengan kecepatan tinggi dengan menggunakan pin mikrokontroler yang sedikit. SPI melibatkan master dan slave. Keduanya mengirimkan dan menerima data secara terus menurus, namun master bertanggung jawab untuk menyediakan sinyal clock untuk transfer data.
+
+3. UART
+UART (Universal Asynchronous Receiver-Transmitter) adalah protokol komunikasi serial yang digunakan untuk mengirim dan menerima data antara perangkat elektronik. UART adalah komponen keras yang memungkinkan komunikasi serial asinkron, yang berarti data dikirimkan bit demi bit tanpa sinyal clock terpisah. Perangkat mikrokontroler dan banyak perangkat elektronik lainnya dilengkapi dengan modul UART yang memungkinkan mereka berkomunikasi dengan perangkat lain menggunakan protokol ini.
+
+4. CAN
+Controller Area Network (CAN) adalah sistem bus serial integritas tinggi untuk perangkat intelijen jaringan. Busses dan perangkatnya merupakan komponen umum dalam sistem otomotif dan industri. Menggunakan perangkat antarmuka dapat, anda dapat menulis aplikasi LabVIEW untuk berkomunikasi dengan jaringan. Controller Area Network (CAN) menggunakan dua kabel, setengah duplex, sistem jaringan kecepatan tinggi, yang jauh lebih unggul dari teknologi berantai konvensional seperti RS232 dalam hal fungsionalitas dan keandalan namun dapat menerapkan biaya lebih efektif.
+
+sekian...
